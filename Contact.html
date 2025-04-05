@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cattle Farm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-transparent fixed w-full p-4 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white" id="navbar-heading">DeBeer Farm</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white font-semibold hover:text-green-600" id="home-heading">Home</a></li>
+                <li><a href="About.html" class="text-white font-semibold hover:text-green-600" id="About-heading">About</a></li>
+                <li><a href="#" class="text-white font-semibold hover:text-green-600" id="contact-heading">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="contact" class="relative bg-cover bg-center h-[400px] flex items-center justify-end text-white" style="background-image: url('images/hero8.webp');">
+    <!-- Overlay for better text readability -->
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+    <div class="p-8 w-full max-w-2xl relative z-10 text-right">
+        <h1 class="text-4xl font-bold" id="hero-heading">Get in Touch with DeBeer Farm</h1>
+        <p class="mt-2 text-lg">Have questions, inquiries, or want to place an order? Our team is here to help! Reach out to us anytime.</p>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section class="pt-24 pb-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Get in Touch with Us</h2>
+        <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+        <p class="text-lg text-gray-600 mb-12">We'd love to hear from you. Feel free to reach out with any questions, comments, or feedback.</p>
+
+        <!-- Contact Form and Map Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Send Us a Message</h3>
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Name and Last Name -->
+                        <div class="col-span-1">
+                            <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name</label>
+                            <input type="text" id="first-name" name="first-name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="John" required>
+                        </div>
+                        <div class="col-span-1">
+                            <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                        <!-- Email and Livestock Dropdown -->
+                        <div class="col-span-1">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="col-span-1">
+                            <label for="livestock" class="block text-gray-700 font-medium mb-2">Livestock</label>
+                            <select id="livestock" name="livestock" class="w-full p-3 border border-gray-300 rounded-md" required>
+                                <option value="" disabled selected>Select Livestock</option>
+                                <option value="Afrikaner">Afrikaner</option>
+                                <option value="Brahman">Brahman</option>
+                                <option value="Nguni">Nguni</option>
+                                <option value="Simmental">Simmental</option>
+                                <option value="Hereford">Hereford</option>
+                                <option value="Goats">Goats</option>
+                                <option value="Chicken">Chicken</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Message Field -->
+                    <div class="mt-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                        <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-md" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <button type="submit" class="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12047.35224412644!2d-77.036870!3d38.907035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzgnNzc1JzI2LjQiTiA3N8KwMzInMzc1LjkiVw!5e0!3m2!1sen!2sus!4v1605407781278!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+<!-- Contact Information Section (Below Form) -->
+<div class="mt-16 text-center">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+    <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mt-8">
+        <!-- Phone Column -->
+        <div class="text-center">
+            <div class="flex justify-center items-center mb-2">
+                <i class="fas fa-phone-alt text-2xl text-black"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-800">Phone</h4>
+            <p class="text-gray-600 text-lg">+1 234 567 890</p>
+        </div>
+
+        <!-- Email Column -->
+        <div class="text-center">
+            <div class="flex justify-center items-center mb-2">
+                <i class="fas fa-envelope text-2xl text-black"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-800">Email</h4>
+            <p class="text-gray-600 text-lg">info@cattlefarm.com</p>
+        </div>
+
+        <!-- Address Column -->
+        <div class="text-center">
+            <div class="flex justify-center items-center mb-2">
+                <i class="fas fa-map-marker-alt text-2xl text-black"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-800">Address</h4>
+            <p class="text-gray-600 text-lg">123 Farm Road, Ruralville, USA</p>
+        </div>
+
+        <!-- Agriculture Column -->
+        <div class="text-center">
+            <div class="flex justify-center items-center mb-2">
+                <i class="fas fa-leaf text-2xl text-black"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-800">Agriculture</h4>
+            <p class="text-gray-600 text-lg">Regulated by the Agricultural Produce Agents Council Act: Reg No. 234</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white text-gray-800 p-10 mt-0">
+    <nav class="mb-4">
+        <ul class="flex justify-center space-x-6 text-sm">
+          <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="About.html" class="hover:text-gray-400">About</a></li>
+          <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="hover:text-gray-400">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="hover:text-gray-400">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-sm text-gray-600 border-t border-gray-300 mt-6 pt-4">
+        &copy; 2025 Cattle Farm. All rights reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

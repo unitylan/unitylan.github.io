@@ -1,0 +1,56 @@
+
+
+/* Smooth transitions for the navbar */
+#navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar-heading, 
+#home-heading, 
+#About-heading, 
+#contact-heading {
+    transition: color 0.3s ease;
+}
+
+/* Ensure the hero section text stays in place and doesn't overlap */
+#home {
+    position: relative; /* Ensures correct stacking context */
+    z-index: 10; /* Place hero behind the navbar */
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 100%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-button {
+    background-color: #5D9B41;  /* Bold, earthy green for visibility */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4C8A36;  /* Slightly darker green on hover */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

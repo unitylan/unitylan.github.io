@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cattle Farming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style src="styles.css"></style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+<!-- Navbar -->
+<nav id="navbar" class="bg-transparent fixed w-full p-4 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-white" id="navbar-heading">DeBeer Farm</a>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="text-white font-semibold hover:text-green-600" id="home-heading">Home</a></li>
+            <li><a href="About.html" class="text-white font-semibold hover:text-green-600" id="About-heading">About</a></li>
+            <li><a href="Contact.html" class="text-white font-semibold hover:text-green-600" id="contact-heading">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="relative bg-cover bg-center h-[600px] flex items-center justify-end text-white" style="background-image: url('images/house.jpeg');">
+    <!-- Overlay for better text readability -->
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+    <div class="p-8 w-full max-w-2xl relative z-10 text-right">
+        <h1 class="text-4xl font-bold" id="hero-heading">Transform Your Farm with Premium Cattle</h1>
+        <p class="mt-2 text-lg">Raising quality cattle for dairy and meat production, designed to help your farm thrive and grow.</p>
+        <a href="#cattle" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Explore Our Cattle</a>
+    </div>
+</section>
+
+<!-- Welcome Content -->
+<section class="p-10 bg-gray-100">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 p-6 text-center md:text-left">
+            <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-bold text-gray-800">Welcome to</h2>
+            </div>
+            <h1 class="text-6xl font-bold text-gray-800">DeBeer Farm</h1>
+            <p class="text-gray-600 text-lg mt-4">
+                We’re a family-owned farm dedicated to raising healthy, sustainable livestock. From grass-fed beef to free-range poultry, we provide high-quality products for our community.
+            </p>
+            <p class="text-gray-600 text-lg mt-4">
+               <a href="About.html" class="text-green-600 hover:text-green-700 font-semibold inline-flex items-center">About Us 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" class="w-4 h-4 ml-2">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="images/house3.webp" alt="DeBeer Farm" class="rounded-lg shadow-lg max-w-full h-auto">
+        </div>
+    </div>
+</section>
+
+<!-- Cattle Listings -->
+<section id="cattle" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Cattle Breeds</h2>
+    <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+    <div class="flex space-x-6 overflow-x-auto scrollbar-hide p-4">
+        <!-- Afrikaner Card -->
+        <div class="min-w-[400px] bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
+            <img src="images/afrikaner.jpg" class="w-full h-56 object-cover rounded" alt="Afrikaner Cow">
+            <h3 class="text-2xl font-semibold mt-4">Afrikaner</h3>
+            <p class="text-gray-600">Category: Beef Cattle</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <!-- First Column (Breed & Age, Price) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>2.5 years old</li>
+                        <li>Muscular, strong frame, healthy udders</li>
+                    </ul>
+                </div>
+                <!-- Second Column (Health Status, Weight & Size) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>613kg</li>
+                        <li>Reddish</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4">Afrikaner cattle are tough and resilient, perfect for South Africa's harsh, hot conditions. They’re low-maintenance, disease-resistant, and known for producing high-quality beef. Their muscular build and red to light brown coats make them an ideal choice for beef production in tough climates.</p>
+            <p class="text-green-700 font-semibold">Status: For Sale</p>
+            <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Inquire</button>
+        </div>
+
+        <!-- Brahman Card -->
+        <div class="min-w-[400px] bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
+            <img src="images/brahman.jpeg" class="w-full h-56 object-cover rounded" alt="Brahman Cow">
+            <h3 class="text-2xl font-semibold mt-4">Brahman</h3>
+            <p class="text-gray-600">Category: Beef & Dairy Cattle</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <!-- First Column (Breed & Age, Price) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>4 years old</li>
+                        <li>Solid frame, distinct hump, healthy coat</li>
+                    </ul>
+                </div>
+                <!-- Second Column (Health Status, Weight & Size) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>817.53kg</li>
+                        <li>Light grey</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4">Brahman cattle are heat-resistant and disease-tolerant, making them perfect for warmer regions. They grow large and produce excellent beef, thriving on pasture with minimal care. With their grey or red coats and muscular build, they are a top choice for beef farmers in hot climates.</p>
+            <p class="text-green-700 font-semibold">Status: For Sale</p>
+            <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Inquire</button>
+        </div>
+
+        <!-- Nguni Card -->
+        <div class="min-w-[400px] bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
+            <img src="images/nguni2.webp" class="w-full h-56 object-cover rounded" alt="Nguni Cow">
+            <h3 class="text-2xl font-semibold mt-4">Nguni</h3>
+            <p class="text-gray-600">Category: Beef & Dairy Cattle</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <!-- First Column (Breed & Age, Price) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>3.1 years old</li>
+                        <li>Compact, muscular, healthy coat, good hooves</li>
+                    </ul>
+                </div>
+                <!-- Second Column (Health Status, Weight & Size) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>427kg</li>
+                        <li>Dark brown</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4">Nguni cattle are adaptable, disease-resistant, and thrive in diverse conditions. They are a versatile breed, excellent for both meat and milk production. Their beautiful variety of colours and patterns, along with their hardiness, make them ideal for small-scale, sustainable farming.</p>
+            <p class="text-green-700 font-semibold">Status: For Sale</p>
+            <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Inquire</button>
+        </div>
+
+        <!-- Simmental Card -->
+        <div class="min-w-[400px] bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
+            <img src="images/simmental.jpeg" class="w-full h-56 object-cover rounded" alt="Simmental Cow">
+            <h3 class="text-2xl font-semibold mt-4">Simmental</h3>
+            <p class="text-gray-600">Category: Beef Cattle</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <!-- First Column (Breed & Age, Price) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>2 years old</li>
+                        <li>Large, well-muscled, strong frame</li>
+                    </ul>
+                </div>
+                <!-- Second Column (Health Status, Weight & Size) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>789kg</li>
+                        <li>Red and White</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4">Simmental cattle are fast-growing and high-yielding, making them ideal for both beef and milk production. They are known for their yellow to reddish-brown coats and excellent feed conversion rates. Simmentals are perfect for commercial farms looking to maximize meat and dairy production.</p>
+            <p class="text-green-700 font-semibold">Status: For Sale</p>
+            <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Inquire</button>
+        </div>
+
+        <!-- Hereford Card -->
+        <div class="min-w-[400px] bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
+            <img src="images/hereford.webp" class="w-full h-56 object-cover rounded" alt="Hereford Cow">
+            <h3 class="text-2xl font-semibold mt-4">Hereford</h3>
+            <p class="text-gray-600">Category: Beef Cattle</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <!-- First Column (Breed & Age, Price) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>2.3 years old</li>
+                        <li>Healthy and muscular, good fat cover</li>
+                    </ul>
+                </div>
+                <!-- Second Column (Health Status, Weight & Size) -->
+                <div class="text-left text-gray-600">
+                    <ul class="list-disc pl-5">
+                        <li>850.2kg</li>
+                        <li>Dark brown</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4">Hereford cattle are calm, easy to handle, and produce top-quality beef with excellent marbling. They adapt well to various climates and are known for their consistent meat quality. Their red coat with a white face and great feed conversion make them a great choice for premium beef production.</p>
+            <p class="text-green-700 font-semibold">Status: For Sale</p>
+            <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Inquire</button>
+        </div>
+    </div>
+</section>
+
+<!-- Inception Timeline -->
+<section class="p-10 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">The DeBeer Journey</h2>
+    <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+    <ol class="relative border-l border-gray-300 sm:flex sm:items-start sm:border-l-0 sm:border-t">
+        <!-- Timeline Items -->
+        <li class="relative mb-6 sm:mb-0 sm:flex-1 flex flex-col h-full text-center sm:text-left">
+            <div class="flex items-center mb-3 sm:mb-0">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-green-100 rounded-full ring-4 ring-white dark:ring-gray-900">
+                    <svg class="w-4 h-4 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-300 h-0.5"></div>
+            </div>
+            <div class="mt-3 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">DeBeer Farm Founded</h3>
+                    <time class="block mb-2 text-sm text-gray-500">Founded in 2004</time>
+                </div>
+                <p class="text-base text-gray-600">DeBeer Farm was founded with the goal of providing quality, ethically-raised produce while maintaining a sustainable approach.</p>
+            </div>
+        </li>
+
+        <li class="relative mb-6 sm:mb-0 sm:flex-1 flex flex-col h-full text-center sm:text-left">
+            <div class="flex items-center mb-3 sm:mb-0">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-green-100 rounded-full ring-4 ring-white dark:ring-gray-900">
+                    <svg class="w-4 h-4 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-300 h-0.5"></div>
+            </div>
+            <div class="mt-3 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Expansion to Livestock Farming</h3>
+                    <time class="block mb-2 text-sm text-gray-500">Expanded in 2008</time>
+                </div>
+                <p class="text-base text-gray-600">DeBeer Farm expanded to include free-range livestock, marking a significant milestone in supplying local markets with ethically-raised meat.</p>
+            </div>
+        </li>
+
+        <li class="relative mb-6 sm:mb-0 sm:flex-1 flex flex-col h-full text-center sm:text-left">
+            <div class="flex items-center mb-3 sm:mb-0">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-green-100 rounded-full ring-4 ring-white dark:ring-gray-900">
+                    <svg class="w-4 h-4 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-300 h-0.5"></div>
+            </div>
+            <div class="mt-3 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Adoption of Sustainable Practices</h3>
+                    <time class="block mb-2 text-sm text-gray-500">Sustainability adopted in 2015</time>
+                </div>
+                <p class="text-base text-gray-600">In 2015, DeBeer Farm fully transitioned to sustainable farming practices, enhancing soil health and protecting the environment.</p>
+            </div>
+        </li>
+
+        <li class="relative mb-6 sm:mb-0 sm:flex-1 flex flex-col h-full text-center sm:text-left">
+            <div class="flex items-center mb-3 sm:mb-0">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-green-100 rounded-full ring-4 ring-white dark:ring-gray-900">
+                    <svg class="w-4 h-4 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-300 h-0.5"></div>
+            </div>
+            <div class="mt-3 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Expansion of Community Engagement</h3>
+                    <time class="block mb-2 text-sm text-gray-500">Community Engagement in 2020</time>
+                </div>
+                <p class="text-base text-gray-600">DeBeer Farm significantly increased its community involvement, hosting farm tours and educational events.</p>
+            </div>
+        </li>
+        <li class="relative mb-6 sm:mb-0 sm:flex-1 flex flex-col h-full text-center sm:text-left">
+            <div class="flex items-center mb-3 sm:mb-0">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-green-100 rounded-full ring-4 ring-white dark:ring-gray-900">
+                    <svg class="w-4 h-4 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-300 h-0.5"></div>
+            </div>
+            <div class="mt-3 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Continued Commitment to Growth</h3>
+                    <time class="block mb-2 text-sm text-gray-500">In Progress - 2023</time>
+                </div>
+                <p class="text-base text-gray-600">Today, DeBeer Farm continues to grow, adapt, and innovate. Our commitment to sustainability, ethical farming practices, and community engagement drives our day-to-day operations, with plans to expand our services and offerings even further in the coming years.</p>
+            </div>
+        </li>
+    </ol>    
+</section>
+
+<!-- Animal Cards Section -->
+<section id="animals" class="py-16 px-4 container mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-8">Additional Livestock</h2>
+    <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+        <!-- Goat Card with Background Image -->
+        <div class="max-w-sm bg-cover bg-center rounded-lg shadow-lg overflow-hidden" style="background-image: url('images/goat.jpeg'); height: 300px;">
+            <!-- Content Section (Heading & Description) -->
+            <div class="flex flex-col justify-center items-center h-full bg-black bg-opacity-50 text-white p-4">
+                <h3 class="text-3xl font-semibold mb-4">Goat</h3>
+                <p class="text-lg text-center">
+                    Our cattle are raised with care in open pastures where they graze naturally. With a focus on ethical farming practices, we ensure they live healthy, stress-free lives to provide high-quality meat for your table.
+                </p>
+            </div>
+        </div>
+
+        <!-- Chicken Card with Background Image -->
+        <div class="max-w-sm bg-cover bg-center rounded-lg shadow-lg overflow-hidden" style="background-image: url('images/chickens2.jpeg'); height: 300px;">
+            <!-- Content Section (Heading & Description) -->
+            <div class="flex flex-col justify-center items-center h-full bg-black bg-opacity-50 text-white p-4">
+                <h3 class="text-3xl font-semibold mb-4">Chickens</h3>
+                <p class="text-lg text-center">
+                    Our free-range chickens enjoy fresh air and ample space to roam. We provide them with a nutritious diet to ensure they lay fresh, delicious eggs that our customers love. Ethical, farm-fresh eggs every day.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section id="cta" class="py-12 bg-gray-50 text-white">
+    <div class="relative w-full max-w-5xl mx-auto p-6 rounded-3xl overflow-hidden bg-green-500 shadow-lg">
+        <div class="relative w-full h-56 md:h-64 rounded-2xl overflow-hidden">
+            <img src="images/hero7.jpeg" alt="Livestock Farming" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center p-6 md:p-10">
+                <div class="flex items-center justify-between">
+                    <!-- Left-aligned text & button -->
+                    <div class="max-w-lg text-left">
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Enhance Your Farm with Expert Solutions</h2>
+                        <p class="text-white mt-2">Join a growing network of successful livestock farmers. Explore solutions tailored to your farm’s needs.</p>
+                        <a href="Contact.html" class="mt-4 inline-flex items-center text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                            Learn More
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Right-aligned cow icon from Font Awesome (large size) -->
+                    <div class="hidden md:block">
+                        <i class="fas fa-cow text-white opacity-80 text-9xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Informative Tools Section -->
+<div class="max-w-auto mx-auto bg-gray-100 shadow-xl rounded-lg p-8 mt-8">
+    <h2 class="text-3xl font-semibold text-center mb-8">Informative Tools</h2>
+    <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+    <!-- Cattle Comparison Accordion -->
+    <div class="mb-8">
+        <button 
+            class="w-1/2 mx-auto bg-white text-black font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-green-200 transition-all flex justify-between items-center"
+            onclick="toggleAccordion('comparisonPanel', this)" 
+            data-accordion-icon="comparisonIcon"
+            data-active-classes="bg-white text-gray-700"
+            data-inactive-classes="bg-white text-gray-700">
+            <span class="mr-2">Cattle Comparison</span> 
+            <span id="comparisonIcon" class="ml-2 transition-transform">&#9660;</span>
+        </button>
+    </div>
+    
+    <!-- Cattle Comparison Panel -->
+    <div id="comparisonPanel" class="hidden p-6 bg-gray-50 rounded-lg shadow-md max-w-3xl mx-auto mb-8">
+        <h3 class="text-3xl font-semibold mb-6 text-gray-700">Cattle Comparison Tool</h3>
+        <div class="space-y-4">
+            <label class="block text-lg text-gray-700">Select first breed:</label>
+            <select id="breed1" class="w-full p-3 border rounded-lg shadow-sm bg-gray-100 focus:ring-2 focus:ring-blue-400">
+                <option value="Afrikaner">Afrikaner</option>
+                <option value="Brahman">Brahman</option>
+                <option value="Nguni">Nguni</option>
+                <option value="Simmental">Simmental</option>
+                <option value="Hereford">Hereford</option>
+            </select>
+            <label class="block text-lg text-gray-700">Select second breed:</label>
+            <select id="breed2" class="w-full p-3 border rounded-lg shadow-sm bg-gray-100 focus:ring-2 focus:ring-blue-400">
+                <option value="Afrikaner">Afrikaner</option>
+                <option value="Brahman">Brahman</option>
+                <option value="Nguni">Nguni</option>
+                <option value="Simmental">Simmental</option>
+                <option value="Hereford">Hereford</option>
+            </select>
+            <button class="bg-green-600 text-white font-semibold py-3 px-6 rounded-lg w-full shadow-lg hover:bg-green-700 mt-4 transition duration-300" onclick="compareCattle()">Compare</button>
+        </div>
+        <div id="comparisonResult" class="mt-6"></div>
+    </div>
+
+    <!-- Livestock Tools Accordion -->
+    <div class="mb-8">
+        <button 
+            class="w-1/2 mx-auto bg-white text-black font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-green-200 transition-all flex justify-between items-center"        
+            onclick="toggleAccordion('toolsPanel', this)" 
+            data-accordion-icon="toolsIcon"
+            data-active-classes="bg-white text-gray-700"
+            data-inactive-classes="bg-white text-gray-700">
+            <span class="mr-2">Profit Calculator</span>
+            <span id="toolsIcon" class="ml-2 transition-transform">&#9660;</span>
+        </button>
+    </div>
+
+ <!-- Livestock Tools Panel -->
+<div id="toolsPanel" class="hidden p-6 bg-gray-50 rounded-lg shadow-md max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- Animal Type Selector -->
+    <div class="bg-white p-6 rounded-lg shadow-lg space-y-6 max-w-full">
+        <h3 class="text-2xl font-semibold text-gray-700">Animal Type Selector</h3>
+        <p class="text-gray-600">Select the type of livestock for your farm.</p>
+        
+        <label for="animal-type" class="block text-lg font-medium text-gray-700 mt-4">Select Animal Type:</label>
+        <select id="animal-type" class="w-full p-4 border rounded-md shadow-sm bg-gray-100 focus:ring-2 focus:ring-green-400 text-lg">
+            <option value="">-- Choose Animal --</option>
+            <option value="Afrikaner">Afrikaner</option>
+            <option value="Brahman">Brahman</option>
+            <option value="Nguni">Nguni</option>
+            <option value="Simmental">Simmental</option>
+            <option value="Hereford">Hereford</option>
+            <option value="chicken">Chicken</option>
+            <option value="goat">Goat</option>
+        </select>
+        
+        <div id="growth-rate" class="mt-4 text-sm text-gray-700 font-medium"></div>
+        <div id="market-price" class="mt-4 text-sm text-gray-700 font-medium"></div>
+    </div>
+
+    <!-- Profit Calculator -->
+    <div class="bg-white p-6 rounded-lg shadow-lg space-y-6 max-w-full">
+        <h3 class="text-2xl font-semibold text-gray-700">Profit Calculator</h3>
+        <p class="text-gray-600">Estimate your potential profit from livestock farming.</p>
+        
+        <!-- Number of Animals and Cost per Animal -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <label for="animal-count" class="block text-lg font-medium text-gray-700">Number of Animals:</label>
+                <input type="number" id="animal-count" class="w-full p-4 border rounded-md shadow-sm bg-gray-100 focus:ring-2 focus:ring-green-400 text-lg">
+            </div>
+            <div>
+                <label for="cost-per-animal" class="block text-lg font-medium text-gray-700">Cost per Animal (ZAR):</label>
+                <input type="number" id="cost-per-animal" class="w-full p-4 border rounded-md shadow-sm bg-gray-100 focus:ring-2 focus:ring-green-400 text-lg">
+            </div>
+        </div>
+        
+        <!-- Growth Rate and Market Price -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+            <div>
+                <label for="growth-rate-input" class="block text-lg font-medium text-gray-700">Estimated Growth Rate (KG):</label>
+                <input type="text" id="growth-rate-input" class="w-full p-4 border rounded-md shadow-sm bg-gray-100 focus:ring-2 focus:ring-green-400 text-lg" readonly>
+            </div>
+            <div>
+                <label for="market-price-input" class="block text-lg font-medium text-gray-700">Dynamic Market Price (ZAR):</label>
+                <input type="text" id="market-price-input" class="w-full p-4 border rounded-md shadow-sm bg-gray-100 focus:ring-2 focus:ring-green-400 text-lg" readonly>
+            </div>
+        </div>
+
+        <!-- Calculate Profit Button -->
+        <button id="calculate-profit" class="w-full p-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300 mt-6">Calculate Profit</button>
+        <div id="profit-result" class="mt-6 text-lg font-medium text-gray-700"></div>
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-white text-gray-800 p-10 mt-0">
+    <nav class="mb-4">
+        <ul class="flex justify-center space-x-6 text-sm">
+          <li><a href="#" class="hover:text-gray-400">Home</a></li>
+          <li><a href="About.html" class="hover:text-gray-400">About</a></li>
+          <li><a href="Contact.html" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="hover:text-gray-400">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="hover:text-gray-400">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-sm text-gray-600 border-t border-gray-300 mt-6 pt-4">
+        &copy; 2025 Cattle Farm. All rights reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Our Farm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+
+<!-- Navbar -->
+<nav id="navbar" class="bg-transparent fixed w-full p-4 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-white" id="navbar-heading">DeBeer Farm</a>
+        <ul class="flex space-x-6">
+            <li><a href="index.html" class="text-white font-semibold hover:text-green-600" id="home-heading">Home</a></li>
+            <li><a href="#about" class="text-white font-semibold hover:text-green-600" id="About-heading">About</a></li>
+            <li><a href="Contact.html" class="text-white font-semibold hover:text-green-600" id="contact-heading">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="about" class="relative bg-cover bg-center h-[400px] flex items-center justify-end text-white" style="background-image: url('images/hero5.jpeg');">
+    <!-- Overlay for better text readability -->
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+    <div class="p-8 w-full max-w-2xl relative z-10 text-right">
+        <h1 class="text-4xl font-bold" id="hero-heading">Our Story at DeBeer Farm</h1>
+        <p class="mt-2 text-lg">DeBeer Farm is a family-owned business dedicated to sustainable farming practices. We raise healthy livestock and provide fresh, locally sourced products to our community.</p>
+        <a href="#our-story" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Learn More</a>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section id="our-story" class="bg-gray-100 py-16 px-4">
+    <div class="container mx-auto max-w-7xl">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-semibold text-center mb-8">The DeBeer Story</h2>
+                <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+                <p class="text-lg text-gray-700">
+                    Our farm’s journey began over four generations ago with the DeBeer family’s dream to provide quality, locally-sourced meat. Starting with a few cattle, we’ve grown to raise goats, pigs, chickens, and other livestock. Throughout our growth, we've always remained committed to sustainability and ethical farming practices. We believe in farming as a way of life, where every decision we make reflects our deep respect for the land and our animals.
+                </p>
+                <p class="text-lg text-gray-700 mt-4">
+                    What sets us apart is not just the quality of our meat but our commitment to environmental stewardship. We treat our animals like family, providing them with stress-free, comfortable environments to thrive. By implementing sustainable grazing methods and focusing on long-term land preservation, we are creating a legacy of responsible farming that we can pass on for generations to come.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/farmer.jpeg" alt="Farmer working" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Livestock Care Section -->
+<section  class="py-16 px-4 container mx-auto bg-gray-50">
+    <h2 class="text-3xl font-semibold text-center mb-8">How We Care for Our Livestock</h2>
+    <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">   
+    <!-- Table for Livestock Care -->
+    <table class="min-w-full table-auto bg-white rounded-lg shadow-md mb-8">
+        <thead>
+            <tr class="bg-gray-200 text-gray-600">
+                <th class="py-4 px-6 text-left font-medium">Livestock Type</th>
+                <th class="py-4 px-6 text-left font-medium">Feeding</th>
+                <th class="py-4 px-6 text-left font-medium">Watering</th>
+                <th class="py-4 px-6 text-left font-medium">Health Monitoring</th>
+                <th class="py-4 px-6 text-left font-medium">Additional Care</th>
+                <th class="py-4 px-6 text-left font-medium">Breeding</th>
+                <th class="py-4 px-6 text-left font-medium">Housing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cattle Row -->
+            <tr class="border-t">
+                <td class="py-4 px-6 text-gray-800 font-semibold">Cattle</td>
+                <td class="py-4 px-6 text-gray-600">
+                    Cattle are fed a balanced diet including pasture grazing and supplemental feed like silage. 
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('cattle-feeding')">Read More</button>
+                    <div id="cattle-feeding" class="hidden mt-2 text-gray-600 text-sm">
+                        The diet is tailored to ensure healthy growth, milk production, and reproduction. We focus on natural grazing practices that support cattle well-being.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    We provide access to clean, fresh water at all times.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('cattle-watering')">Read More</button>
+                    <div id="cattle-watering" class="hidden mt-2 text-gray-600 text-sm">
+                        Water is essential, especially in hot weather and during high production periods. We monitor water quality and ensure they have constant access.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Routine health monitoring is done, including vaccinations, deworming, and parasite control.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('cattle-health')">Read More</button>
+                    <div id="cattle-health" class="hidden mt-2 text-gray-600 text-sm">
+                        We closely monitor for signs of illness or injury, ensuring our cattle stay healthy and productive throughout their lives.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Cattle are often treated for parasites and receive regular injections.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('cattle-care')">Read More</button>
+                    <div id="cattle-care" class="hidden mt-2 text-gray-600 text-sm">
+                        Mineral supplements may also be provided to support healthy growth and reproductive success, ensuring cattle stay in optimal condition.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    We use both natural breeding and artificial insemination (AI).
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('cattle-breeding')">Read More</button>
+                    <div id="cattle-breeding" class="hidden mt-2 text-gray-600 text-sm">
+                        This helps improve herd genetics for better yield, disease resistance, and reproductive success.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Cattle are housed in large, open pastures.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('cattle-housing')">Read More</button>
+                    <div id="cattle-housing" class="hidden mt-2 text-gray-600 text-sm">
+                        During cold weather, they are kept in sheltered barns to protect from extreme temperatures. We prioritize space and comfort for our cattle.
+                    </div>
+                </td>
+            </tr>
+    
+            <!-- Chicken Row -->
+            <tr class="border-t">
+                <td class="py-4 px-6 text-gray-800 font-semibold">Chicken</td>
+                <td class="py-4 px-6 text-gray-600">
+                    Chickens are fed a mix of grains, protein supplements, and vitamins.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('chicken-feeding')">Read More</button>
+                    <div id="chicken-feeding" class="hidden mt-2 text-gray-600 text-sm">
+                        We provide a balanced diet to ensure egg production and overall health, with a focus on natural feeding practices.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Fresh, clean water is available at all times.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('chicken-watering')">Read More</button>
+                    <div id="chicken-watering" class="hidden mt-2 text-gray-600 text-sm">
+                        Water is crucial for hydration and egg production. We maintain strict water cleanliness standards to support healthy birds.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Regular health checks are performed.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('chicken-health')">Read More</button>
+                    <div id="chicken-health" class="hidden mt-2 text-gray-600 text-sm">
+                        We monitor for diseases such as avian flu and Newcastle disease, providing vaccinations and parasite control as needed.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Chickens are given access to dust baths.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('chicken-care')">Read More</button>
+                    <div id="chicken-care" class="hidden mt-2 text-gray-600 text-sm">
+                        They also receive vitamin supplements for better immunity and egg production.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    We focus on breeding high-quality laying hens.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('chicken-breeding')">Read More</button>
+                    <div id="chicken-breeding" class="hidden mt-2 text-gray-600 text-sm">
+                        Careful selection of healthy, productive birds is crucial to maintaining our egg production and flock health.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Chickens are housed in well-ventilated coops.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('chicken-housing')">Read More</button>
+                    <div id="chicken-housing" class="hidden mt-2 text-gray-600 text-sm">
+                        Coops are regularly cleaned to maintain hygiene and prevent disease outbreaks, with enough space for the chickens to roam.
+                    </div>
+                </td>
+            </tr>
+    
+            <!-- Goats Row -->
+            <tr class="border-t">
+                <td class="py-4 px-6 text-gray-800 font-semibold">Goats</td>
+                <td class="py-4 px-6 text-gray-600">
+                    Goats are grazed on pasture with supplementary hay and grains.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('goat-feeding')">Read More</button>
+                    <div id="goat-feeding" class="hidden mt-2 text-gray-600 text-sm">
+                        The diet ensures proper nutrition, especially during winter months, to maintain health and energy levels.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Goats always have access to fresh water.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('goat-watering')">Read More</button>
+                    <div id="goat-watering" class="hidden mt-2 text-gray-600 text-sm">
+                        We ensure their water sources are clean and free from contaminants, providing fresh hydration throughout the day.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Regular health checks are done to monitor for diseases.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('goat-health')">Read More</button>
+                    <div id="goat-health" class="hidden mt-2 text-gray-600 text-sm">
+                        We monitor for diseases like foot rot and parasites, providing necessary treatments to keep them healthy.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Goats are given regular deworming.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('goat-care')">Read More</button>
+                    <div id="goat-care" class="hidden mt-2 text-gray-600 text-sm">
+                        We also provide extra supplements when needed to ensure their health and vitality.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Breeding management includes careful selection.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('goat-breeding')">Read More</button>
+                    <div id="goat-breeding" class="hidden mt-2 text-gray-600 text-sm">
+                        Natural breeding or artificial insemination (AI) is used to improve herd genetics and support reproductive success.
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-gray-600">
+                    Goats are housed in clean enclosures.
+                    <button class="text-blue-500 hover:underline focus:outline-none mt-2 block" onclick="toggleMoreInfo('goat-housing')">Read More</button>
+                    <div id="goat-housing" class="hidden mt-2 text-gray-600 text-sm">
+                        During harsh weather, they are kept in barns with plenty of bedding to stay warm and comfortable.
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Environmental Section -->
+<section id="environment" class="py-16 px-4 bg-gray-100">
+    <div class="container mx-auto max-w-7xl">        
+        <!-- First Half: Image on the Right -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-semibold text-center mb-8">Our Environmental Commitment</h2>
+                <hr class="w-1/2 mx-auto border-t-2 border-green-500 mb-8">
+        
+                <p class="text-lg text-gray-700">
+                    At DeBeer Cattle Farm, sustainability isn’t just a buzzword—it’s the foundation of everything we do. We believe that responsible farming practices are essential not only for the land but also for the health of our animals and the community we serve. Our approach is holistic, focusing on long-term environmental stewardship while ensuring the highest quality, ethically-raised livestock.
+                </p>
+                <p class="text-lg text-gray-700 mt-4">
+                    We use rotational grazing to maintain healthy pastures and reduce the need for chemical fertilizers. By moving livestock across different sections of the farm, we allow the grass to regenerate and prevent overgrazing. This practice ensures that our animals always have access to fresh, nutrient-rich forage year-round.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/farmer2.jpeg" alt="Farm Environment" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <!-- Second Half: Image on the Left -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 mt-8">
+            <div class="md:w-1/2">
+                <p class="text-lg text-gray-700">
+                    Water conservation is another key priority for us. We’ve invested in efficient irrigation systems that reduce waste, ensuring we manage our water usage, particularly during the drier months. We also harvest rainwater, providing an additional water source that helps us minimize dependence on groundwater.
+                </p>
+                <p class="text-lg text-gray-700 mt-4">
+                    Our commitment extends to reducing our carbon footprint. We’ve implemented renewable energy solutions, including solar panels for electricity and biofuel systems for heating. We are also exploring alternative feed options that are both sustainable and cost-effective, further aligning our operations with our environmental goals.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/farmer3.jpeg" alt="Farm Sustainability" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section id="cta" class="py-12 bg-gray-50 text-white">
+    <div class="relative w-full max-w-5xl mx-auto p-6 rounded-3xl overflow-hidden bg-green-500 shadow-lg">
+        <div class="relative w-full h-56 md:h-64 rounded-2xl overflow-hidden">
+            <img src="images/hero7.jpeg" alt="Livestock Farming" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center p-6 md:p-10">
+                <div class="flex items-center justify-between">
+                    <!-- Left-aligned text & button -->
+                    <div class="max-w-lg text-left">
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Become a Part of Our Agricultural Community</h2>
+                        <p class="text-white mt-2">Connect with us to explore opportunities and resources for your farm. We're here to support your livestock farming journey.</p>
+                        <a href="Contact.html" class="mt-4 inline-flex items-center text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                            Contact Us
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Right-aligned cow icon from Font Awesome (large size) -->
+                    <div class="hidden md:block">
+                        <i class="fas fa-cow text-white opacity-80 text-9xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white text-gray-800 p-10 mt-0">
+    <nav class="mb-4">
+        <ul class="flex justify-center space-x-6 text-sm">
+          <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#" class="hover:text-gray-400">About</a></li>
+          <li><a href="Contact.html" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="hover:text-gray-400">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="hover:text-gray-400">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-sm text-gray-600 border-t border-gray-300 mt-6 pt-4">
+        &copy; 2025 Cattle Farm. All rights reserved.
+    </div>
+</footer>
+    
+<script src="script.js"></script>
+</body>
+</html>
